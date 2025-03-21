@@ -1,6 +1,10 @@
 import cv2
 import controller as cnt
 from cvzone.HandTrackingModule import HandDetector
+detector = HandDetector(detectionCon=0.8, maxHands=1)
+print("Hand Detector Ready!")
+
+
 
 detector=HandDetector(detectionCon=0.8,maxHands=1)
 
@@ -36,3 +40,4 @@ while True:
 
 video.release()
 cv2.destroyAllWindows()
+
